@@ -6,8 +6,11 @@ import requests
 import pdfkit
 import time
 
+#api_key = st.secrets["OPENAI_API_KEY"]
+
+
 # Set your OpenAI Assistant ID here
-assistant_id = 'asst_Enter your assistant ID here'
+assistant_id = st.secrets["ASSISTANT_ID"]
 
 # Initialize the OpenAI client (ensure to set your API key in the sidebar within the app)
 client = openai
